@@ -1,0 +1,119 @@
+//  * Mixingrid
+//  * @autor Eremeev Ivan
+//  * @email ivan.frontcoder@gmail.com
+//  * Version 1.0
+//  * 2020
+
+
+//* Описание *//
+
+// Всё по аналогии с бутстрап, только добавляем не классы в html, а миксины в scss
+// Добавляем контейнеру wrapper():
+// @include wrapper();
+// Добавляем строке миксин row():
+// @include row();
+// Добавляем колонкам миксин col() с количеством колонок:
+// @include col(3);
+// Для "xl" размера экрана:
+// @include col-xl(3);
+// Для "lg" размера экрана:
+// @include col-lg(3);
+// Для "md" размера экрана:
+// @include col-md(6);
+// Для "sm" размера экрана:
+// @include col-sm(6);
+// Для "xs" размера экрана:
+// @include col-xs(12);
+// Если нужны колонки без отступов(прижатые друг к другу вплотную). Добавить к row:
+// @include no-gutter();
+// Для задания отступов сверху и снизу, равных отступам между колонками использовать переменную $gutter
+
+
+//* Настройки *//
+
+@use "sass:math";
+
+$columns: 12; // Колличество колонок
+$max-width: 1200px; // Максимальная ширина контейнера
+$gutter: 20px; // Расстояние между колонками
+$offset: 30px; // Поля контейнера
+$offset-sm: 15px; // Поля контейнера на мобилке (когда ширина экрана меньше ширины $break_sm)
+// Брэйкпоинты
+$break_xl: 1400px;
+$break_lg: 1200px;
+$break_md: 1050px;
+$break_sm: 768px;
+$break_xs: 500px;
+
+
+//* Код *//
+
+@mixin wrapper() {
+	width: 100%;
+	max-width: $max-width + $offset * 2;
+	padding-left: $offset;
+	padding-right: $offset;
+	margin-left: auto;
+	margin-right: auto;
+	@include sm(padding-left, $offset-sm);
+	@include sm(padding-right, $offset-sm);
+}
+@mixin row(){
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: $gutter * - 1;
+	> * {
+		word-wrap: break-word;
+		box-sizing: border-box;
+		padding-left: $gutter;
+	}
+}
+@mixin col($n) {
+	width: math.div(100%, $columns) * $n;
+}
+@mixin col-xl($n) {
+	@include xl(width, math.div(100%, $columns) * $n);
+}
+@mixin col-lg($n) {
+	@include lg(width, math.div(100%, $columns) * $n);
+}
+@mixin col-md($n) {
+	@include md(width, math.div(100%, $columns) * $n);
+}
+@mixin col-sm($n) {
+	@include sm(width, math.div(100%, $columns) * $n);
+}
+@mixin col-xs($n) {
+	@include xs(width, math.div(100%, $columns) * $n);
+}
+@mixin no-gutter() {
+	margin-left: 0;
+	>* {
+		padding-left: 0;
+	}
+}
+@mixin xl($name, $value){
+	@media screen and (max-width: $break_xl){
+		#{$name}: $value;
+	}
+}
+@mixin lg($name, $value){
+	@media screen and (max-width: $break_lg){
+		#{$name}: $value;
+	}
+}
+@mixin md($name, $value){
+	@media screen and (max-width: $break_md){
+		#{$name}: $value;
+	}
+}
+@mixin sm($name, $value){
+	@media screen and (max-width: $break_sm){
+		#{$name}: $value;
+	}
+}
+@mixin xs($name, $value){
+	@media screen and (max-width: $break_xs){
+		#{$name}: $value;
+	}
+}
