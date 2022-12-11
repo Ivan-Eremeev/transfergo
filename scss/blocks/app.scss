@@ -1,0 +1,138 @@
+/* app */
+.app { 
+  padding: 80px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fafafa;
+    position: relative;
+  }
+  &__circle1 {
+    width: 50%;
+    background-color: $blue;
+    border-radius: 100%;
+    position: absolute;
+    top: -170px;
+    left: -40px;
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  &__circle2 {
+    width: 30%;
+    background-color: $yellow;
+    border-radius: 100%;
+    position: absolute;
+    right: 20px;
+    bottom: -160px;
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  &__img {
+    width: 50%;
+    padding-top: 50px;
+    z-index: 2;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 270px;
+    }
+  }
+  &__content {
+    width: 50%;
+    z-index: 2;
+  }
+  &__sub {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  &__buttons {
+    margin-top: 20px;
+  }
+  &__btn-col {
+    @include col(4);
+    @include col-sm(12);
+  }
+  &__btn {
+    border-radius: 5px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  @media (max-width: $break_md) {
+    &__container {
+      flex-wrap: wrap;
+      padding-top: 50px;
+    }
+    &__img {
+      width: 100%;
+      order: 1;
+    }
+    &__content {
+      width: 100%;
+      text-align: center;
+    }
+    &__buttons {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__circle1 {
+      width: 600px;
+      top: auto;
+      left: -250px;
+      bottom: -200px;
+    }
+    &__circle2 {
+      width: 300px;
+      right: -150px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__circle1 {
+      width: 70%;
+      bottom: 30px;
+      left: -40%;
+    }
+    &__circle2 {
+      width: 50%;
+      right: -30%;
+      bottom: 40px;
+    }
+    &__buttons {
+      max-width: 140px;
+      margin-top: 30px;
+    }
+    &__sub {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__img {
+      padding-top: 40px;
+      img {
+        transform: translate(10px,0);
+      }
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__circle1 {
+      bottom: 200px;
+    }
+    &__circle2 {
+      bottom: 170px;
+    }
+  }
+}
+/* /app */

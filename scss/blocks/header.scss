@@ -53,8 +53,15 @@
     }
   }
   @media (max-width: $break_xs) {
+    &__logo {
+      margin-right: 10px;
+      img {
+        margin-right: 0;
+      }
+    }
     &__buttons {
       .btn {
+        min-width: 120px;
         padding: 10px 20px;
       }
     }

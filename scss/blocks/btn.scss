@@ -13,6 +13,7 @@
   user-select: none;
   transition: 0.3s;
   &--white {
+    background-color: transparent;
     border-color: #fff;
     color: #fff;
     &:hover {

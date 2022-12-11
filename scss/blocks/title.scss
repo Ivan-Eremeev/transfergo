@@ -1,8 +1,12 @@
 /* title */
 .title { 
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: normal;
   color: $black;
-  line-height: 58px;
+  line-height: 42px;
+  @media (max-width: $break_sm) {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 /* /title */

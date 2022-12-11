@@ -12,15 +12,39 @@ block content
     .content 
 
       // welcome
-      .welcome
+      section.welcome
         .wrapper 
           .welcome__content 
-            .welcome__title Платежи за рубеж для организаций и физлиц
-            .welcome__text TransferGo предлагает помощь в производстве платежей из России за рубеж в короткие сроки!
+            h1.welcome__title Платежи за рубеж для организаций и физлиц
+            p.welcome__text TransferGo предлагает помощь в производстве платежей из России за рубеж в короткие сроки!
             .welcome__btn 
-              .btn.btn--green Отправить перевод
+              button.btn.btn--green Отправить перевод
           .welcome__img 
             img(src="img/welcome.png", alt="")
       // /welcome
+
+      // app
+      section.app
+        .wrapper 
+          .app__container 
+            .app__circle1 
+            .app__circle2
+            .app__img 
+              img(src="img/app-ru.webp", alt="")
+            .app__content 
+              .app__sub Делайте переводы где угодно
+              h2.title – скачайте приложение TransferGo
+              .app__buttons 
+                .row.gy
+                  .app__btn-col 
+                    a(href="#").app__btn 
+                      img(src="img/app-store-ru.svg", alt="")
+                  .app__btn-col 
+                    a(href="#").app__btn 
+                      img(src="img/google-play-ru.svg", alt="")
+                  .app__btn-col 
+                    a(href="#").app__btn 
+                      img(src="img/huawei-ru.svg", alt="")
+      // /app
 
     include core/footer.pug
