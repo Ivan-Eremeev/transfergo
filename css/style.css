@@ -397,6 +397,7 @@ body.lock {
   padding: 80px 0 100px;
   background-color: #435f89;
   color: #fff;
+  margin-bottom: 80px;
 }
 .welcome .wrapper {
   display: -webkit-box;
@@ -482,7 +483,7 @@ body.lock {
 /* /welcome */
 /* app */
 .app {
-  padding: 80px 0;
+  margin-bottom: 80px;
 }
 .app__container {
   display: -webkit-box;
@@ -632,5 +633,155 @@ body.lock {
 }
 
 /* /app */
+/* manual */
+.manual {
+  margin-bottom: 80px;
+}
+.manual__container {
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 940 390'%3E%3Cmask id='prefix__a' width='940' height='390' x='0' y='0' maskUnits='userSpaceOnUse'%3E%3Cpath fill='%23fff' d='M940 0H0v390h940V0z'/%3E%3C/mask%3E%3Cg mask='url(%23prefix__a)'%3E%3Cpath fill='%23517EAD' d='M940 0H0v390h940V0z'/%3E%3Cpath fill='%23466A98' d='M689 505c171.208 0 310-138.792 310-310S860.208-115 689-115 379 23.792 379 195s138.792 310 310 310zM179.5 87c37.832 0 68.5-30.669 68.5-68.5S217.332-50 179.5-50 111-19.331 111 18.5 141.668 87 179.5 87z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  position: relative;
+}
+.manual__container .swiper-slide {
+  height: auto;
+}
+.manual__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 30px 50px;
+}
+.manual__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+}
+.manual__img img {
+  width: 350px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.manual__content {
+  width: 50%;
+  padding: 50px 0;
+  color: #fff;
+}
+.manual__content .title {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.manual__text {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+}
+.manual__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 50% !important;
+  left: auto !important;
+  right: 0;
+  bottom: 80px !important;
+}
+.manual__pagination .swiper-pagination-bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-left: 0 !important;
+  margin-right: 15px !important;
+  background-color: #fff;
+  color: #435f89;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.manual__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+@media (max-width: 1024px) {
+  .manual__container {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+  .manual__item {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .manual__img {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .manual__img img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .manual__content {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .manual #manualSlider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .manual #manualSlider .swiper-wrapper {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .manual__pagination {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100% !important;
+    position: static;
+  }
+  .manual__pagination .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .manual__item {
+    padding: 30px 20px;
+  }
+}
+
+/* /manual */
 /* footer */
 /* /footer */

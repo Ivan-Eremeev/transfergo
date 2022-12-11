@@ -47,4 +47,34 @@ block content
                       img(src="img/huawei-ru.svg", alt="")
       // /app
 
+      // manual
+      section.manual
+        .wrapper
+          .manual__container 
+            #manualSlider 
+              .swiper-wrapper 
+                .swiper-slide 
+                  .manual__item 
+                    .manual__img 
+                      img(src="img/delivery-options.webp", alt="")
+                    .manual__content
+                      h2.title Выберите сумму и вариант доставки.
+                      p.manual__text Вы можете платить дебетовой или кредитной картой, банковским переводом, а также Apple Pay.
+                .swiper-slide 
+                  .manual__item 
+                    .manual__img 
+                      img(src="img/recipient-details.webp", alt="")
+                    .manual__content
+                      h2.title Введите данные получателя.
+                      p.manual__text Все, что вам нужно, это имя и номер карты или счета. Все остальное сделаем мы.
+                .swiper-slide 
+                  .manual__item 
+                    .manual__img 
+                      img(src="img/payment-options.webp", alt="")
+                    .manual__content
+                      h2.title Выберите способ оплаты, и сделайте перевод!
+                      p.manual__text Мы сообщим вам о статусе перевода. Отслеживайте также статус перевода в своем личном кабинете через приложение или на вебсайте.
+              .manual__pagination.swiper-pagination
+      // /manual
+
     include core/footer.pug
