@@ -1,5 +1,63 @@
 /* footer */
 .footer { 
-  
+  color: #fff;
+  &__top {
+    padding: 50px 0;
+    background-color: $blue;
+    .row {
+      justify-content: space-between;
+    }
+  }
+  &__col {
+    
+  }
+  &__title {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+  &__list {
+    font-size: 15px;
+    line-height: 18px;
+    li {
+      margin: 10px 0;
+      a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        fill: #fff;
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    padding-top: 30px;
+    background-color: #4f6995;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+    }
+  }
+  &__logo {
+    width: 160px;
+    margin-right: 50px;
+    flex-shrink: 0;
+  }
+  &__text {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  &__copyright {
+    padding: 30px 0;
+    background-color: #4f6995;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+  }
 }
 /* /footer */
