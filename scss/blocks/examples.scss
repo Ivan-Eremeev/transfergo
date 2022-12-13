@@ -1,0 +1,51 @@
+/* examples */
+.examples { 
+  margin-bottom: 80px;
+  &__head {
+    max-width: 380px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    .title {
+      margin-bottom: 20px;
+    }
+  }
+  &__sub {
+    color: #517ead;
+    margin-bottom: 70px;
+  }
+  &__items {
+    .row {
+      margin-top: -60px;
+      > * {
+        padding-top: 60px;
+      }
+    }
+  }
+  &__col {
+    @include col(3);
+    @include col-sm(6);
+    text-align: center;
+  }
+  &__icon {
+    margin-bottom: 30px;
+    fill: $green;
+    svg {
+      max-width: 32px;
+      max-height: 32px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    color: #6b7280;
+  }
+}
+/* /examples */

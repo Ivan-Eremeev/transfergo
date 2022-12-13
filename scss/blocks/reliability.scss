@@ -1,0 +1,58 @@
+/* reliability */
+.reliability { 
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e5f0fd;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 2000px;
+      height: 100%;
+      background-color: #e5f0fd;
+      position: absolute;
+      right: 100%;
+      top: 0;
+    }
+  }
+  &__col {
+    width: 50%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 30px 50px 30px 0;
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+  &__sub {
+    color: #517ead;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    p {
+      margin-top: 20px;
+    }
+  }
+  &__img {
+    height: 100%;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } 
+  }
+  @media (max-width: $break_sm) {
+    &__col {
+      width: 100%;
+    }
+  }
+}
+/* /reliability */

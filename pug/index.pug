@@ -23,6 +23,56 @@ block content
             img(src="img/welcome.png", alt="")
       // /welcome
 
+      // examples
+      section.examples
+        .wrapper 
+          .examples__head 
+            h2.title Когда нужен перевод
+            .examples__sub Ряд примеров, на что может потребоваться оплата или перевод за рубеж
+          .examples__items 
+            .row 
+              .examples__col 
+                .examples__icon 
+                  svg(class="icon-home")
+                    use(xlink:href="img/sprite.svg#home")
+                h3.examples__title Покупки
+                p.examples__text Оплатить счёт на покупку товаров/услуг, выставленный зарубежной организацией
+              .examples__col 
+                .examples__icon 
+                  svg(class="icon-cart")
+                    use(xlink:href="img/sprite.svg#cart")
+                h3.examples__title Учёба и лечение
+                p.examples__text Оплатить обучение, лечение, отдых за границей
+              .examples__col 
+                .examples__icon 
+                  svg(class="icon-hat")
+                    use(xlink:href="img/sprite.svg#hat")
+                h3.examples__title Бронирование и проживание
+                p.examples__text Оплатить бронь/покупку жилья за рубежом
+              .examples__col 
+                .examples__icon 
+                  svg(class="icon-plus")
+                    use(xlink:href="img/sprite.svg#plus")
+                h3.examples__title Иные платежи
+                p.examples__text Произвести любые иные платежи для зарубежных организаций и физических лиц
+      // /examples
+
+      // reliability
+      section.reliability
+        .wrapper 
+          .reliability__row 
+            .reliability__col 
+              .reliability__content 
+                .reliability__sub Privat Money - надёжность
+                h2.title Почему с нами <br>надёжно и безопасно
+                .reliability__text 
+                  p Более 13 лет мы работаем в сфере зарубежного образования и с каждым клиентом проходим успешный путь оплаты обучения, проживания и дополнительных услуг за рубеж.
+                  p За это время мы произвели более 10 тысяч оплат в разные страны мира с различными назначениями платежей.
+            .reliability__col.tablet-hide
+              .reliability__img 
+                img(src="img/reliability.png", alt="")
+      // /reliability
+
       // app
       section.app
         .wrapper 
