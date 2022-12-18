@@ -55,10 +55,10 @@ window.onload = function () {
   //   position: 'right top',
   // });
 
-  // // Magnific Popup | Попап окна
-  // $('.open-popup-link').magnificPopup({
-  //   mainClass: 'mfp-fade'
-  // });
+  // Magnific Popup | Попап окна
+  $('.open-popup-link').magnificPopup({
+    mainClass: 'mfp-fade'
+  });
 
   // // Табы
 	// function tabs() {

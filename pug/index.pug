@@ -18,7 +18,7 @@ block content
             h1.welcome__title Платежи за рубеж для организаций и физлиц
             p.welcome__text TransferGo предлагает помощь в производстве платежей из России за рубеж в короткие сроки!
             .welcome__btn 
-              button.btn.btn--green Отправить перевод
+              a(href="#callback-popup").open-popup-link.btn.btn--green Отправить перевод
           .welcome__img 
             img(src="img/welcome.png", alt="")
       // /welcome
@@ -68,6 +68,8 @@ block content
                 .reliability__text 
                   p Более 13 лет мы работаем в сфере зарубежного образования и с каждым клиентом проходим успешный путь оплаты обучения, проживания и дополнительных услуг за рубеж.
                   p За это время мы произвели более 10 тысяч оплат в разные страны мира с различными назначениями платежей.
+                .reliability__btn 
+                  a(href="#callback-popup").open-popup-link.btn.btn--green Отправить перевод
             .reliability__col.tablet-hide
               .reliability__img 
                 img(src="img/reliability.png", alt="")
@@ -132,7 +134,7 @@ block content
                   h3.steps__title We do the rest
                   p.steps__text Once we have received your payment the money will arrive at the other end within hours.
           .steps__btn 
-            .btn.btn--green Связаться с нами
+            a(href="#callback-popup").open-popup-link.btn.btn--green Связаться с нами
       // /steps
       
       // faq
@@ -161,6 +163,8 @@ block content
               .faq__item
                 h3.faq__title Можно ли оплатить онлайн?
                 p.faq__text Оплатить картой за вас мы также сможем в режиме онлайн
+            .faq__btn 
+              a(href="#callback-popup").open-popup-link.btn.btn--green Бесплатная консультация
       // /faq
 
       // app
@@ -216,5 +220,29 @@ block content
                       p.manual__text Мы сообщим вам о статусе перевода. Отслеживайте также статус перевода в своем личном кабинете через приложение или на вебсайте.
               .manual__pagination.swiper-pagination
       // /manual
+
+      // callback
+      #callback-popup.popup.mfp-hide.callback
+        .popup__head 
+          a(href="#").popup__logo 
+            img(src="img/logo.png", alt="")
+        .popup__body 
+          .callback__title 
+            b Become a TransferGo affiliate. 
+            | Leave your contact details and we will get in touch!
+          form(action="#").callback__form 
+            .callback__inputs 
+              .callback__input 
+                .callback__label Имя *
+                input(type="text") 
+              .callback__input 
+                .callback__label Email *
+                input(type="text") 
+              .callback__input 
+                .callback__label Вебсайт *
+                input(type="text") 
+            .callback__btn 
+              button(type="submit").btn.btn--blue Отправить
+      // /callback
 
     include core/footer.pug

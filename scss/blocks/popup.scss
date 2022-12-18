@@ -2,10 +2,48 @@
 .popup {
   position: relative;
   background: #FFF;
-  padding: 20px;
   width: auto;
-  max-width: 500px;
+  max-width: 638px;
   margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  &__head {
+    padding: 30px;
+    background-color: #3583ee;
+  }
+  &__body {
+    padding: 30px;
+  }
+}
+.mfp-bg {
+  background-color: #777;
+}
+button.mfp-close,
+button.mfp-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  opacity: 1;
+  font-size: 0;
+  top: -12px;
+  right: -12px;
+  &:after,&:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  &:after {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  &:before {
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
 }
 /* overlay at start */
 .mfp-fade.mfp-bg {
@@ -17,7 +55,7 @@
 }
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {

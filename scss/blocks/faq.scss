@@ -35,9 +35,19 @@
   &__text {
     color: #6b7280;
   }
+  &__btn {
+    text-align: center;
+  }
   @media (max-width: $break_sm) {
     &__container {
       padding: 40px 20px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__btn {
+      .btn {
+        width: 100%;
+      }
     }
   }
 }

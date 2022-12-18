@@ -28,6 +28,13 @@
       background-color: #4bb79f;
     }
   }
+  &--blue {
+    background-color: #3583ee;
+    color: #fff;
+    &:hover {
+      background-color: lighten(#3583ee, 5%);
+    }
+  }
   @media (max-width: $break_xs) {
     padding: 20px 20px;
   }

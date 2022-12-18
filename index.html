@@ -9,9 +9,7 @@
 		<meta name="robots" content="noindex, nofollow">
 		<title>Навигаця по страницам</title>
 		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
-		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
 		<link rel="stylesheet" href="css/plugins/magnific-popup.css">
-		<link rel="stylesheet" href="css/plugins/nouislider.min.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body> 
@@ -30,9 +28,7 @@
 						<div class="welcome__content"> 
 							<h1 class="welcome__title">Платежи за рубеж для организаций и физлиц</h1>
 							<p class="welcome__text">TransferGo предлагает помощь в производстве платежей из России за рубеж в короткие сроки!</p>
-							<div class="welcome__btn"> 
-								<button class="btn btn--green">Отправить перевод</button>
-							</div>
+							<div class="welcome__btn"> <a class="open-popup-link btn btn--green" href="#callback-popup">Отправить перевод</a></div>
 						</div>
 						<div class="welcome__img"> <img src="img/welcome.png" alt=""></div>
 					</div>
@@ -100,6 +96,7 @@
 										<p>Более 13 лет мы работаем в сфере зарубежного образования и с каждым клиентом проходим успешный путь оплаты обучения, проживания и дополнительных услуг за рубеж.</p>
 										<p>За это время мы произвели более 10 тысяч оплат в разные страны мира с различными назначениями платежей.</p>
 									</div>
+									<div class="reliability__btn"> <a class="open-popup-link btn btn--green" href="#callback-popup">Отправить перевод</a></div>
 								</div>
 							</div>
 							<div class="reliability__col tablet-hide">
@@ -181,9 +178,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="steps__btn"> 
-							<div class="btn btn--green">Связаться с нами</div>
-						</div>
+						<div class="steps__btn"> <a class="open-popup-link btn btn--green" href="#callback-popup">Связаться с нами</a></div>
 					</div>
 				</section>
 				<!-- /steps-->
@@ -221,6 +216,7 @@
 									<p class="faq__text">Оплатить картой за вас мы также сможем в режиме онлайн</p>
 								</div>
 							</div>
+							<div class="faq__btn"> <a class="open-popup-link btn btn--green" href="#callback-popup">Бесплатная консультация</a></div>
 						</div>
 					</div>
 				</section>
@@ -287,6 +283,33 @@
 					</div>
 				</section>
 				<!-- /manual-->
+				<!-- callback-->
+				<div class="popup mfp-hide callback" id="callback-popup">
+					<div class="popup__head"> <a class="popup__logo" href="#"> <img src="img/logo.png" alt=""></a></div>
+					<div class="popup__body"> 
+						<div class="callback__title"> <b>Become a TransferGo affiliate. </b>Leave your contact details and we will get in touch!</div>
+						<form class="callback__form" action="#"> 
+							<div class="callback__inputs"> 
+								<div class="callback__input"> 
+									<div class="callback__label">Имя *</div>
+									<input type="text">
+								</div>
+								<div class="callback__input"> 
+									<div class="callback__label">Email *</div>
+									<input type="text">
+								</div>
+								<div class="callback__input"> 
+									<div class="callback__label">Вебсайт *</div>
+									<input type="text">
+								</div>
+							</div>
+							<div class="callback__btn"> 
+								<button class="btn btn--blue" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- /callback-->
 			</div>
 			<!-- footer-->
 			<footer class="footer">
@@ -363,10 +386,7 @@
 		</div>
 		<script src="js/jquery.min.js"> </script>
 		<script src="js/plugins/swiper-bundle.min.js"> </script>
-		<script src="js/plugins/air-datepicker.js"> </script>
 		<script src="js/plugins/jquery.magnific-popup.min.js"> </script>
-		<script src="js/plugins/sticky-sidebar.js"> </script>
-		<script src="js/plugins/nouislider.min.js"> </script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
