@@ -73,57 +73,94 @@ block content
                 img(src="img/reliability.png", alt="")
       // /reliability
 
-      // steps
-      .steps
+      // partners
+      .partners
         .wrapper 
-          .title Как мы работаем
+          .partners__item 
+            .row.gy
+              .partners__col 
+                .partners__img 
+                  img(src="img/koronapay.jpg", alt="")
+              .partners__col 
+                .title Партнер Korona Pay
+                .partners__text Сотрудничество с платежной системой Korona Pay, известной в России как бренд «Золотая Корона». 
+                .partners__link 
+                  a(href="#") Читать статью на сайте Korona Pay
+          .partners__item 
+            .row.gy
+              .partners__col 
+                .title Википедия о TransferGo
+                .partners__text Ознакомьтесь детальнее с историей компании в свободной энциклопедии.
+                .partners__link 
+                  a(href="#") Читать на сайте Wikipedia
+              .partners__col 
+                .partners__img 
+                  img(src="img/wikipedia.jpg", alt="")
+          .partners__item 
+            .row.gy
+              .partners__col 
+                .partners__img 
+                  img(src="img/screenshot.png", alt="")
+              .partners__col 
+                .title 28 900+ Отзывов
+                .partners__text Десятки тысяч откликов о нашей работе на всемирной платформе отзывов, на которой люди делятся и узнают обзоры бизнеса.
+                .partners__link 
+                  a(href="#") Читать отзывы
+                .partners__img2 
+                  img(src="img/trustpilot.png", alt="")
+      // /partners
+
+      // steps
+      section.steps
+        .wrapper 
+          h2.title Как мы работаем
           .steps__items 
             .row 
               .steps__col 
                 .steps__item 
                   .steps__num 1
-                  .steps__title Book a transfer
-                  .steps__text Provide the recipient’s details and the amount you want to send.
+                  h3.steps__title Book a transfer
+                  p.steps__text Provide the recipient’s details and the amount you want to send.
               .steps__col 
                 .steps__item 
                   .steps__num 2
-                  .steps__title Make a local payment
-                  .steps__text Make a local bank transfer or use a debit card (for payments up to £1000)
+                  h3.steps__title Make a local payment
+                  p.steps__text Make a local bank transfer or use a debit card (for payments up to £1000)
               .steps__col 
                 .steps__item 
                   .steps__num 3
-                  .steps__title We do the rest
-                  .steps__text Once we have received your payment the money will arrive at the other end within hours.
+                  h3.steps__title We do the rest
+                  p.steps__text Once we have received your payment the money will arrive at the other end within hours.
           .steps__btn 
             .btn.btn--green Связаться с нами
       // /steps
       
       // faq
-      .faq
+      section.faq
         .wrapper  
           .faq__container 
             .faq__head
-              .title FAQ - ответы на вопросы
+              h2.title FAQ - ответы на вопросы
               .faq__sub Мы ответим на все вопросы, которые у вас возникнут и вот самые частые:
             .faq__items
               .faq__item
-                .faq__title Кому возможен перевод?
-                .faq__text юридическому и физическому лицу
+                h3.faq__title Кому возможен перевод?
+                p.faq__text юридическому и физическому лицу
               .faq__item
-                .faq__title Куда?
-                .faq__text за рубеж
+                h3.faq__title Куда?
+                p.faq__text за рубеж
               .faq__item
-                .faq__title В какой валюте мы принимаем деньги?
-                .faq__text в рублях
+                h3.faq__title В какой валюте мы принимаем деньги?
+                p.faq__text в рублях
               .faq__item
-                .faq__title В какой валюте мы отправляем деньги?
-                .faq__text в любой (евро, доллары, фунты стерлингов, швейцарские франки, юани и другие)
+                h3.faq__title В какой валюте мы отправляем деньги?
+                p.faq__text в любой (евро, доллары, фунты стерлингов, швейцарские франки, юани и другие)
               .faq__item
-                .faq__title Какая минимальная сумма перевода?
-                .faq__text Минимальная сумма перевода – эквивалент 500 долларов США для юридических и/или физических лиц
+                h3.faq__title Какая минимальная сумма перевода?
+                p.faq__text Минимальная сумма перевода – эквивалент 500 долларов США для юридических и/или физических лиц
               .faq__item
-                .faq__title Можно ли оплатить онлайн?
-                .faq__text Оплатить картой за вас мы также сможем в режиме онлайн
+                h3.faq__title Можно ли оплатить онлайн?
+                p.faq__text Оплатить картой за вас мы также сможем в режиме онлайн
       // /faq
 
       // app

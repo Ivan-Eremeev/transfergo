@@ -1,0 +1,56 @@
+/* partners */
+.partners { 
+  padding: 80px 0 1px;
+  margin-bottom: 80px;
+  background-color: #fafafa;
+  &__item {
+    margin-bottom: 80px;
+    .row {
+      align-items: center;
+    }
+    .title {
+      margin-bottom: 20px;
+    }
+  }
+  &__col {
+    @include col(6);
+    @include col-xs(12);
+  }
+  &__img {
+    
+  }
+  &__text {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 20px;
+  }
+  &__link {
+    margin: 20px 0;
+    a {
+      color: $green;
+      border-bottom: 1px solid transparent;
+      &:hover {
+        border-color: $green;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__text {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__item {
+      text-align: center;
+      margin-bottom: 50px;
+      &:nth-child(2n) {
+        .partners__col {
+          &:nth-child(1) {
+            order: 2;
+          }
+        }
+      }
+    }
+  }
+}
+/* /partners */
