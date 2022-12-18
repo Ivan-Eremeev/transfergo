@@ -372,6 +372,12 @@ button.mfp-arrow:before {
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+@media (max-width: 768px) {
+  button.mfp-close,
+  button.mfp-arrow {
+    right: 20px;
+  }
+}
 
 /* overlay at start */
 .mfp-fade.mfp-bg {

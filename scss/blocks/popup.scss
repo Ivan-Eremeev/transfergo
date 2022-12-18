@@ -44,6 +44,9 @@ button.mfp-arrow {
   &:before {
     transform: translate(-50%,-50%) rotate(-45deg);
   }
+  @media (max-width: $break_sm) {
+    right: 20px;
+  }
 }
 /* overlay at start */
 .mfp-fade.mfp-bg {
