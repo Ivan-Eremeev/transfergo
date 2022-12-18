@@ -354,19 +354,13 @@ body.lock {
 .header__quest:hover {
   color: #81B3F1;
 }
-.header__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.header__partners {
+  margin-right: 30px;
+  color: #fff;
+  font-weight: 300;
 }
-.header__buttons .btn {
-  min-width: 140px;
-}
-.header__buttons .btn:nth-child(1) {
-  margin-right: 10px;
+.header__partners:hover {
+  color: #81B3F1;
 }
 @media (max-width: 950px) {
   .header__quest {
@@ -385,8 +379,10 @@ body.lock {
   .header__logo img {
     margin-right: 0;
   }
-  .header__buttons .btn {
-    min-width: 120px;
+  .header__partners {
+    display: none;
+  }
+  .header__user .btn {
     padding: 10px 20px;
   }
 }
